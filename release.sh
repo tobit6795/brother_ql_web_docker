@@ -7,7 +7,7 @@ set -e
 
 USER=pklaus
 REPOSITORY=brother_ql_web
-COMMIT=$(git ls-remote -h https://github.com/pklaus/brother_ql_web.git | cut -c 1-40)
+COMMIT=$(git ls-remote -h https://github.com/tobit6795/brother_ql_web.git | cut -c 1-40)
 SHORT_COMMIT=$(echo $COMMIT | cut -c 1-7)
 
 echo "Latest commit in the repository: $SHORT_COMMIT ($COMMIT)"
