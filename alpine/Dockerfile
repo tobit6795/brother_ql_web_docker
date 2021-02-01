@@ -13,7 +13,7 @@ RUN apk add --update --no-cache \
     ttf-dejavu
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
-RUN git clone --depth=1 https://github.com/pklaus/brother_ql_web.git
+RUN git clone --depth=1 https://github.com/tobit6795/brother_ql_web.git
 WORKDIR ./brother_ql_web
 RUN rm -r .git
 RUN pip3 install --no-cache-dir -r requirements.txt
@@ -22,4 +22,4 @@ RUN apk del .build-deps
 
 EXPOSE 8013
 
-CMD [ "./brother_ql_web.py", "--model", "QL-700", "file:///dev/usb/lp0" ]
+CMD [ "./brother_ql_web.py", "--model", "QL-820NWB", "tcp://10.10.0.211" ]
