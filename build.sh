@@ -6,7 +6,7 @@ set -x
 set -e
 
 DOCKER_REPO=pklaus/brother_ql_web
-APP_COMMIT=$(git ls-remote -h https://github.com/pklaus/brother_ql_web.git | cut -c 1-40 | cut -c 1-7)
+APP_COMMIT=$(git ls-remote -h https://github.com/tobit6795/brother_ql_web.git| cut -c 1-40 | cut -c 1-7)
 
 echo "Latest commit in the repository: $APP_COMMIT"
 
